@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import '../App.css';
 
 const textoOriginal = 'Hola Mundo! archivo con Blob';
 

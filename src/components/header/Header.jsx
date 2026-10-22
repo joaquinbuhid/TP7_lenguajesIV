@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -11,10 +12,12 @@ function Header() {
 
   return (
     <header className="header1">
-      <a href="#"><span className="header1-title">TP BLOB</span></a>
+      <Link to="/"><span className="header1-title">TP BLOB</span></Link>
       <nav className="header1-nav">
-        <a href="#">Acerca de</a>
-        <a href="#">Contacto</a>
+        <Link to="/">Inicio</Link>
+        <Link to="/blob">Blob</Link>
+        <Link to="/acerca-de">Acerca de</Link>
+        <Link to="/contacto">Contacto</Link>
       </nav>
       <div className="header1-actions">
         <button
